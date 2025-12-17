@@ -10,7 +10,6 @@ const MongoClient = mongodb.MongoClient
 const mongo_username = environment_variabels.parsed.USERNAME
 const mongo_password = environment_variabels.parsed.PASSWORD
 const uri = `mongodb+srv://${mongo_username}:${mongo_password}@cluster0.v5ovlbj.mongodb.net/?appName=Cluster0`
-//const uri = `mongodb+srv://DataBase1:Content72.@cluster0.v5ovlbj.mongodb.net/?appName=Cluster0`
 
 const port = 8000
 
@@ -29,4 +28,5 @@ MongoClient.connect(
         app.listen(port, ()=> {
             console.log(`listening on port ${port}`)
         })
+
     })
